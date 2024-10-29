@@ -101,7 +101,7 @@ class Car:
     def drive(self, hours):
         self.travelled_distance += self.current_speed * hours
 
-# starting the race with 10 cars
+
 cars = []
 for i in range(1, 11):
     registration_number = f"ABC-{i}"
