@@ -17,6 +17,7 @@ class Car:
 
     def gettravelled_distance(self):
         return self.travelled_distance
+
     def __str__(self):
         return f'{self.registration_number} , {self.max_speed}, {self.current_speed}, {self.travelled_distance}'
 
@@ -67,8 +68,8 @@ class Car:
             self.current_speed = 0
 
     def drive (self,hours):
-        distance_travelled = self.current_speed * hours
-        self.travelled_distance += distance_travelled
+       travelled_distance = self.current_speed * hours
+       self.travelled_distance += travelled_distance
 
 
 car1 = Car("ABC-123",142)
@@ -108,8 +109,8 @@ for i in range(1, 11):
     cars.append(Car(registration_number, max_speed))
 
 
-race_during = True
-while race_during:
+during_race = True
+while during_race:
     for car in cars:
 
         speed_change = random.randint(-10, 15)
@@ -120,19 +121,15 @@ while race_during:
 
 
         if car.travelled_distance >= 10000:
-            race_during = False
+            during_race = False
             break
-
-print(f"{'Registration':<10} {'Max Speed (km/h)':<10} {'Current Speed (km/h)':<15} {'Travelled Distance (km)':<18}")
-print("-" * 70)
+print("-------"* 13 )
+print("| Registration number | Max Speed (km/h) | Current Speed (km/h) | Travelled Distance (km) |")
+print("-------"* 13 )
 for car in cars:
-    print(f"{car.registration_number:<10} {car.max_speed:<15} {car.current_speed:<20} {car.travelled_distance:<18.2f}")
+    print(f"| {car.registration_number:<19} | {car.max_speed:<16} | {car.current_speed:<20} | {car.travelled_distance:<23.2f} |")
 
-
-
-
-
-
+print("-------"* 13 )
 
 
 
