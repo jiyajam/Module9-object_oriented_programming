@@ -4,22 +4,9 @@ class Car:
     def __init__(self, registration_number, max_speed):
         self.registration_number = registration_number
         self.max_speed = max_speed
-        self.current_speed = 0
-        self.travelled_distance = 0
+        self.current_speed = "0 km/hr
+        self.travelled_distance = "0 km/hr"
 
-    def getregistration_number(self):
-        return self.registration_number
-    def getmax_speed(self):
-        return self.max_speed
-
-    def getcurrent_speed(self):
-        return self.current_speed
-
-    def gettravelled_distance(self):
-        return self.travelled_distance
-
-    def __str__(self):
-        return f'{self.registration_number} , {self.max_speed}, {self.current_speed}, {self.travelled_distance}'
 
 car1 = Car("ABC-123", "142km/h" )
 print(f" the car's registration number is  {car1.registration_number}, the maximum speed is {car1.max_speed}, the current speed is {car1.current_speed} and the travelled distance is {car1.travelled_distance}")
