@@ -9,7 +9,7 @@ class Car:
 
 
 car1 = Car("ABC-123", "142km/h" )
-print(f" the car's registration number is  {car1.registration_number}, the maximum speed is {car1.max_speed}, the current speed is {car1.current_speed} and the travelled distance is {car1.travelled_distance}")
+print(f"The car's registration number is  {car1.registration_number}, the maximum speed is {car1.max_speed}, the current speed is {car1.current_speed} and the travelled distance is {car1.travelled_distance}")
 
 ########2
 class Car:
